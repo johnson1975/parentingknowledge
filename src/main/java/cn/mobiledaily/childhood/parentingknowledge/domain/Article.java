@@ -40,6 +40,7 @@ public class Article implements Serializable {
     private Long commentCount = 0l;
     private Date publishDate;
     private String publisher;
+    private Integer status;
 
     public Long getId() {
         return id;
@@ -151,5 +152,13 @@ public class Article implements Serializable {
 
     public void setCommentCount(Long commentCount) {
         this.commentCount = commentCount;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 }
